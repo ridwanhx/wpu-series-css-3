@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opacity | CSS 3</title>
+	<style>
+		body {
+			background-image: url(img/bg.png);
+		}
+
+		.parent {
+			width: 300px;
+			height: 300px;
+			background-color: darkseagreen;
+			position: relative;
+			opacity: 1;
+		}
+
+		.child {
+			width: 75px;
+			height: 75px;
+			background-color: darkblue;
+			position: absolute;
+			bottom: -25px;
+			right: -25px;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Implementasi Opacity pada CSS 3</h1>
+
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+
+</body>
+</html>

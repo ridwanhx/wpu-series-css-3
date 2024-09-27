@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition part 2 | Delay</title>
+	<style>
+		.container {
+			width: 600px;
+			border: 3px solid darkseagreen;
+			margin: auto;
+		}
+
+		.kotak {
+			width: 100px;
+			height: 100px;
+			background-color: dodgerblue;
+			margin: 3px;
+			text-align: center;
+			line-height: 100px;
+			color: white;
+			/* ketika mouse diarahkan ke elemen, geser dan putar elemen selama 3s, kemudian delay terlebih dahulu selama 6s lalu ubah warna elemen dalam kurun waktu 500ms. */
+			transition: margin-left 3s, transform 3s, background-color 500ms 6s;
+		}
+
+		.container:hover .kotak {
+			margin-left: 500px;
+			transform: rotate(720deg);
+			background-color: magenta;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>implementasi Transisi part 2</h1>
+
+	<div class="container">
+		<div class="kotak">Delay</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform | CSS 3</title>
+	<style>
+		p {
+			text-align: center;
+		}
+
+		.container {
+			width: 440px;
+			padding: 5px;
+			margin: auto;
+			border: 3px solid lightskyblue;
+			box-sizing: border-box;
+		}
+
+		.satu, .dua, .tiga, .empat {
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 3px;
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 100px;
+		}
+
+		.satu {
+			background-color: magenta;
+			transition: 1s;
+		}
+		.satu:hover {
+			/* simple value */
+			transform: scale(2);
+			/*multiple value*/
+			/*transform: scaleX(1.3) scaleY(2);*/
+		}
+
+		.dua {
+			background-color: dodgerblue;
+			transition: 1s;
+		}
+		.dua:hover {
+			/*transform: rotate(90deg);*/
+			transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+		}
+
+		.tiga {
+			background-color: orange;
+			transition: 1s;
+		}
+		.tiga:hover {
+			transform: skew(-45deg);
+			/*transform: skewX(-45deg) skewY(45deg);*/
+		}
+
+		.empat {
+			background-color: seagreen;
+			transition: 1s;
+		}
+		.empat:hover {
+			/*transform: translate(50px);*/
+			transform: translateX(90px) translateY(100px);
+		}
+
+		.clear {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>implementasi transform css 3</h1>
+
+	<div class="container clear">
+		<div class="satu">scale</div>
+		<div class="dua">rotate</div>
+		<div class="tiga">skew</div>
+		<div class="empat">translate</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>

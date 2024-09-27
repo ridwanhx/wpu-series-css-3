@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linear Gradient | CSS 3</title>
+	<style>
+		body {
+			font-family: montserrat, arial;
+		}
+
+		.container {
+			width: 1040px;
+			border: 3px solid darkviolet;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+
+		.kotak, .kotak1, .kotak2, .kotak3, .kotak4 { float: left; margin: 3px}
+
+		.kotak {
+			width: 250px;
+			height: 100px;
+			/* contoh penulisan syntax sederhana */
+			background-image: linear-gradient(red, dodgerblue);
+
+			/* multiple color */
+			/*background: linear-gradient(red,green,blue,magenta);*/
+
+			/* contoh penulisan syntax lengkap */
+			
+			/* menggunakan derajat || damn alus cuk! */
+			/*background: linear-gradient(45deg, magenta, dodgerblue);*/
+			
+			/* menggunakan keyword */
+			/*background: linear-gradient(to right top, magenta, dodgerblue);*/
+
+			/* implementasi color stop */
+			/*background: linear-gradient(to left, magenta 40%, dodgerblue 66%);*/
+
+			text-align: center;
+			line-height: 100px;
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		.kotak2 {
+			width: 250px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+			background: linear-gradient(red,green,blue,magenta);
+		}
+
+		.kotak3 {
+			width: 250px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+			background: linear-gradient(45deg, magenta, dodgerblue);
+		}
+
+		.kotak4 {
+			width: 250px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+			background: linear-gradient(to left, magenta 40%, dodgerblue 66%);
+		}
+
+		.clear {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>implementasi linear gradient css 3</h1>
+
+	<div class="container clear">
+		<div class="kotak">Sederhana</div>
+		<div class="kotak2">Multiple color</div>
+		<div class="kotak3">Lengkap</div>
+		<div class="kotak4">Color stop</div>
+		<!-- clearfix cara manual -->
+		<div class="clear"></div>
+	</div>
+
+</body>
+</html>

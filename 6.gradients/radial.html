@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radial Gradient | CSS 3</title>
+	<style>
+
+		body {
+			font-family: montserrat, arial;
+		}
+
+		/* dari segi cara pakai / implementasi penulisan kode, tidak jauh dari linear-gradient() hanya saja perbedaan paling mencolok ada di bagian penulisan syntax lengkapnya */
+		.container {
+			width: 620px;
+			border: 3px solid darkviolet;
+			padding: 5px;
+		}
+
+		.satu, .dua {
+			float: left;
+			margin: 5px;
+			color: white;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.satu {
+			width: 300px;
+			height: 150px;
+			background: radial-gradient(magenta, dodgerblue);
+		}
+
+		.dua {
+			width: 300px;
+			height: 150px;
+			background: radial-gradient(circle farthest-side at bottom right, magenta, dodgerblue);
+		}
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<h1>implementasi radial gradient css 3</h1>
+
+	<div class="container clear">
+		<div class="satu">sederhana</div>
+		<div class="dua">lengkap</div>
+		<!-- clearfix cara manual -->
+		<div class="clear"></div>
+	</div>
+
+</body>
+</html>

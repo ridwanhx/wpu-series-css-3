@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation | CSS 3</title>
+	<style>
+		@font-face {
+			font-family: "AirAmerica";
+			src: url(fonts/AirAmerica-regular.otf)format('truetype');
+		}
+		body {
+			font-family: "AirAmerica", arial, sans-serif;
+		}
+
+		.kotak {
+			z-index: 99;
+			width: 100px;
+			height: 100px;
+			background-color: dodgerblue;
+			color: white;
+			font-size: 22px;
+			text-align: center;
+			line-height: 100px;
+			margin-left: 0;
+
+			/* property animation : "nama_animasi" "durasi" "timing_function" "fill_mode" "animation_iteration_count" */
+			animation: animasiKotakBiru 10s ease forwards 2;
+		}
+
+
+		/* penulisan sederhana keyframes */
+		/*@keyframes animasiKotakBiru {
+			from {
+				width: 200px;
+				height: 200px;
+			}
+			to {
+				width: 400px;
+				height: 400px;
+			}
+		}*/
+
+		/* keyframes */
+		@keyframes animasiKotakBiru {
+			0% {
+				/*posisi awal*/
+				margin-left: 0;
+			}
+
+			20% {
+				/* elemen bergerak ke kanan sebesar 990px */
+				background-color: magenta;
+				margin-left: 990px;
+				margin-top: 0;
+			}
+
+			40% {
+				/* elemen berada di posisi 990px dan bergeser kebawah sebesar 320px */
+				background-color: seagreen;
+				margin-left: 990px;
+				margin-top: 320px;
+			}
+
+			60% {
+				/* elemen bergeser ke kiri sebesar (990 - 800) = 190px dan mempertahankan nilai margin top sebelumnya */
+				background-color: orange;
+				margin-left: 800px;
+				margin-top: 320px;
+			}
+
+			80% {
+				/* elemen bergerak keatas sebesar (320 - 120) = 200px dan mempertahankan nilai margin left sebelumnya */
+				background-color: darkviolet;
+				margin-left: 800px;
+				margin-top: 120px;
+			}
+
+			100% {
+				/* elemen bergerak ke samping kiri sebesar (800 - 720) = 80px dan mempertahankan nilai margin top sebelumnya */
+				background-color: salmon;
+				margin-left: 720px;
+				margin-top: 120px;
+			}
+		}
+
+		/* animasipadika */
+		/*@keyframes animasiKotakBiru {
+			0% {
+				width: 200px;
+			}
+
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}*/
+
+	</style>
+</head>
+<body>
+
+	<h1>implementasi animasi pada css 3</h1>
+
+	<div class="kotak">animation</div>
+
+</body>
+</html>

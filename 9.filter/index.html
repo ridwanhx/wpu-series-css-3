@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter | CSS 3</title>
+	<style>
+		body {
+			text-align: center;
+			font-family: montserrat;
+		}
+
+		/* aturan penulisan tipe filter */
+		/* 
+		1. blur(px),
+		2. brightness(angka | %) default: 100%,
+		3. contrast(angka | %) default: 100%,
+		4. saturate(angka | %) default: 100%,
+		5. grayscale(angka | %),
+		6. sepia(angka | %),
+		7. hue-rotate(deg),
+		8. invert(angka | %),
+		9. opacity(angka | %),
+		10. drop-shadow(sama seperti box-shadow hanya saja fungsi drop-shadow lebih kompleks "bisa diterapkan bukan hanya pada objek gambar") 
+		*/
+
+		.gambar img {
+			width: 400px;
+			/* opsional */
+			/*-webkit-filter: blur(6px);*/
+
+			/* syntax sederhana */
+			/*filter: blur(6px);*/
+			/*filter: brightness(120%);*/
+			/*filter: contrast(130%);*/
+			/*filter: saturate(180%);*/
+			/*filter: grayscale(100%);*/
+			/*filter: sepia(100%);*/
+			/*filter: hue-rotate(45deg);*/
+			/*filter: invert(100%);*/
+			/*filter: opacity(.6);*/
+			/*filter: drop-shadow(5px 8px 6px black);*/
+
+			/*multiple type value*/
+			filter: blur(3px) grayscale(100%);
+			transition: 1s;
+		}
+
+		.gambar img:hover {
+			filter: blur(0px) grayscale(0%);
+		}
+
+		/* implementasi drop-shadow pada objek teks */
+		h1 {
+			color: white;
+			font-size: 40px;
+			filter: drop-shadow(7px 9px 10px black);
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Hello World!</h1>
+
+	<div class="gambar"><img src="img/squid.jpg"></div>
+
+</body>
+</html>
